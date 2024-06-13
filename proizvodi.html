@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Proizvodi - IT Prodavnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="proizvodi.html">Proizvodi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Odaberite komponente:</h1>
+        <form id="product-form">
+            <label for="graphics">Grafička karta:</label>
+            <select id="graphics" name="graphics">
+                <option value="0">Izaberite grafičku kartu</option>
+                <option value="300">NVIDIA GTX 1660 - 300€</option>
+                <option value="400">NVIDIA RTX 3060 - 400€</option>
+                <option value="600">NVIDIA RTX 3080 - 600€</option>
+            </select><br>
+
+            <label for="cpu">Procesor:</label>
+            <select id="cpu" name="cpu">
+                <option value="0">Izaberite procesor</option>
+                <option value="200">Intel i5 - 200€</option>
+                <option value="300">Intel i7 - 300€</option>
+                <option value="400">Intel i9 - 400€</option>
+            </select><br>
+
+            <label for="motherboard">Matična ploča:</label>
+            <select id="motherboard" name="motherboard">
+                <option value="0">Izaberite matičnu ploču</option>
+                <option value="100">ASUS B450 - 100€</option>
+                <option value="150">ASUS B550 - 150€</option>
+                <option value="200">ASUS X570 - 200€</option>
+            </select><br>
+
+            <label for="memory">DDR4 memorija:</label>
+            <select id="memory" name="memory">
+                <option value="0">Izaberite memoriju</option>
+                <option value="80">8GB DDR4 - 80€</option>
+                <option value="120">16GB DDR4 - 120€</option>
+                <option value="200">32GB DDR4 - 200€</option>
+            </select><br>
+
+            <p>Ukupna cena: <span id="total-price">0€</span></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 IT Prodavnica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
