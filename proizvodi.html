@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Proizvodi - IT Prodavnica</title>
+    <title>Proizvodi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -51,14 +51,31 @@
                 <option value="80">8GB DDR4 - 80€</option>
                 <option value="120">16GB DDR4 - 120€</option>
                 <option value="200">32GB DDR4 - 200€</option>
+                
+                
             </select><br>
 
+            <label for="HardDisk">HardDisk:</label>
+            <select id="HardDisk" name="HardDisk">
+                <option value="0">Izaberite hard disk</option>
+                <option value="150"> 100gb - 150€</option>
+                <option value="270">1tb - 270€</option>
+                <option value="750">5tb - 750€</option>
+                
+            </select>
+            
+            <br>
+
             <p>Ukupna cena: <span id="total-price">0€</span></p>
+            <input type="submit" value="Kupi" onclick='document.getElementById("demo").innerHTML = "Vaša porudžbina je uspešno poručena"'>
+                <p id="demo"></p>
+
+            
         </form>
     </main>
     <footer>
         <p>&copy; 2024 IT Prodavnica</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 </html>
